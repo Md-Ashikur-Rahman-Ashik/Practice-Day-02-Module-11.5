@@ -4,7 +4,7 @@ int main()
 {
     int array_size;
 
-    scanf("%d", array_size);
+    scanf("%d", &array_size);
     int arr[array_size];
 
     for (int i = 0; i < array_size; i++)
@@ -15,21 +15,16 @@ int main()
 
     int countFrequency = 0;
 
-    for (int i = 0; i <= 9; i++)
+    for (int i = 0; i < array_size; i++)
     {
         /* code */
-        for (int j = 0; j < array_size; j++)
+        if (arr[i] == 0)
         {
-            /* code */
-            if (arr[j])
-            {
-                /* code */
-            }
-            
+            countFrequency++;
         }
-        
     }
-    
+
+    printf("The count of zero is %d", countFrequency);
 
     return 0;
 }
