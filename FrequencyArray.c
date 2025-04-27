@@ -18,47 +18,52 @@ int main()
     for (j = 0; j < array_size; j++)
     {
         /* code */
-        if (arr[j] == 0)
+        for (int l = 0; l <= arr[j]; l++)
         {
             /* code */
-            frequencyArray[0]++;
+            if (arr[j] == l)
+            {
+                /* code */
+                frequencyArray[l]++;
+            }
         }
-        else if (arr[j] == 1)
-        {
-            frequencyArray[1]++;
-        }
-        else if (arr[j] == 2)
-        {
-            frequencyArray[2]++;
-        }
-        else if (arr[j] == 3)
-        {
-            frequencyArray[3]++;
-        }
-        else if (arr[j] == 4)
-        {
-            frequencyArray[4]++;
-        }
-        else if (arr[j] == 5)
-        {
-            frequencyArray[5]++;
-        }
-        else if (arr[j] == 6)
-        {
-            frequencyArray[6]++;
-        }
-        else if (arr[j] == 7)
-        {
-            frequencyArray[7]++;
-        }
-        else if (arr[j] == 8)
-        {
-            frequencyArray[8]++;
-        }
-        else if (arr[j] == 9)
-        {
-            frequencyArray[9]++;
-        }
+
+        // else if (arr[j] == 1)
+        // {
+        //     frequencyArray[1]++;
+        // }
+        // else if (arr[j] == 2)
+        // {
+        //     frequencyArray[2]++;
+        // }
+        // else if (arr[j] == 3)
+        // {
+        //     frequencyArray[3]++;
+        // }
+        // else if (arr[j] == 4)
+        // {
+        //     frequencyArray[4]++;
+        // }
+        // else if (arr[j] == 5)
+        // {
+        //     frequencyArray[5]++;
+        // }
+        // else if (arr[j] == 6)
+        // {
+        //     frequencyArray[6]++;
+        // }
+        // else if (arr[j] == 7)
+        // {
+        //     frequencyArray[7]++;
+        // }
+        // else if (arr[j] == 8)
+        // {
+        //     frequencyArray[8]++;
+        // }
+        // else if (arr[j] == 9)
+        // {
+        //     frequencyArray[9]++;
+        // }
     }
 
     for (int k = 0; k < array_size; k++)
