@@ -2,84 +2,70 @@
 
 int main()
 {
-    int array_size, i;
+    int array_size = 0, i, j;
 
     scanf("%d", &array_size);
     int arr[array_size];
 
-    for (int i = 0; i < array_size; i++)
+    for (i = 0; i < array_size; i++)
     {
         /* code */
         scanf("%d", &arr[i]);
     }
 
-    int countFrequencyZero = 0;
-    int countFrequencyOne = 0;
-    int countFrequencyTwo = 0;
-    int countFrequencyThree = 0;
-    int countFrequencyFour = 0;
-    int countFrequencyFive = 0;
-    int countFrequencySix = 0;
-    int countFrequencySeven = 0;
-    int countFrequencyEight = 0;
-    int countFrequencyNine = 0;
+    int frequencyArray[6] = {0};
 
-    for (i = 0; i < array_size; i++)
+    for (j = 0; j < array_size; j++)
     {
         /* code */
-        if (arr[i] == 0)
+        if (arr[j] == 0)
         {
             /* code */
-            countFrequencyZero++;
+            frequencyArray[0]++;
         }
-        else if (arr[i] == 1)
+        else if (arr[j] == 1)
         {
-            countFrequencyOne++;
+            frequencyArray[1]++;
         }
-        else if (arr[i] == 2)
+        else if (arr[j] == 2)
         {
-            countFrequencyTwo++;
+            frequencyArray[2]++;
         }
-        else if (arr[i] == 3)
+        else if (arr[j] == 3)
         {
-            countFrequencyThree++;
+            frequencyArray[3]++;
         }
-        else if (arr[i] == 4)
+        else if (arr[j] == 4)
         {
-            countFrequencyFour++;
+            frequencyArray[4]++;
         }
-        else if (arr[i] == 5)
+        else if (arr[j] == 5)
         {
-            countFrequencyFive++;
+            frequencyArray[5]++;
         }
-        else if (arr[i] == 6)
+        else if (arr[j] == 6)
         {
-            countFrequencySix++;
+            frequencyArray[6]++;
         }
-        else if (arr[i] == 7)
+        else if (arr[j] == 7)
         {
-            countFrequencySeven++;
+            frequencyArray[7]++;
         }
-        else if (arr[i] == 8)
+        else if (arr[j] == 8)
         {
-            countFrequencyEight++;
+            frequencyArray[8]++;
         }
-        else if (arr[i] == 9)
+        else if (arr[j] == 9)
         {
-            countFrequencyNine++;
+            frequencyArray[9]++;
         }
     }
 
-    printf("0 => %d\n", countFrequencyZero);
-    printf("1 => %d\n", countFrequencyOne);
-    printf("2 => %d\n", countFrequencyTwo);
-    printf("3 => %d\n", countFrequencyThree);
-    printf("4 => %d\n", countFrequencyFour);
-    printf("5 => %d\n", countFrequencyFive);
-    printf("6 => %d\n", countFrequencySix);
-    printf("7 => %d\n", countFrequencySeven);
-    printf("8 => %d\n", countFrequencyEight);
-    printf("9 => %d", countFrequencyNine);
+    for (int k = 0; k < array_size; k++)
+    {
+        /* code */
+        printf("%d => %d\n", k, frequencyArray[k]);
+    }
 
     return 0;
 }
