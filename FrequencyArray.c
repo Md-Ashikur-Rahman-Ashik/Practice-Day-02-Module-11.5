@@ -13,60 +13,17 @@ int main()
         scanf("%d", &arr[i]);
     }
 
-    int frequencyArray[6] = {0};
+    int frequencyArray[7] = {0};
 
-    for (j = 0; j < array_size; j++)
+    for (j = 0; j < 7; j++)
     {
-        /* code */
-        for (int l = 0; l <= arr[j]; l++)
-        {
-            /* code */
-            if (arr[j] == l)
-            {
-                /* code */
-                frequencyArray[l]++;
-            }
-        }
 
-        // else if (arr[j] == 1)
-        // {
-        //     frequencyArray[1]++;
-        // }
-        // else if (arr[j] == 2)
-        // {
-        //     frequencyArray[2]++;
-        // }
-        // else if (arr[j] == 3)
-        // {
-        //     frequencyArray[3]++;
-        // }
-        // else if (arr[j] == 4)
-        // {
-        //     frequencyArray[4]++;
-        // }
-        // else if (arr[j] == 5)
-        // {
-        //     frequencyArray[5]++;
-        // }
-        // else if (arr[j] == 6)
-        // {
-        //     frequencyArray[6]++;
-        // }
-        // else if (arr[j] == 7)
-        // {
-        //     frequencyArray[7]++;
-        // }
-        // else if (arr[j] == 8)
-        // {
-        //     frequencyArray[8]++;
-        // }
-        // else if (arr[j] == 9)
-        // {
-        //     frequencyArray[9]++;
-        // }
+        int value = arr[j];
+
+        frequencyArray[value]++;
     }
 
-    for (int k = 0; k < array_size; k++)
+    for (int k = 0; k < 7; k++)
     {
         /* code */
         printf("%d => %d\n", k, frequencyArray[k]);
